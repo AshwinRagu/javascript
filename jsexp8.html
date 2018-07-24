@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>hey there</p>
+<button onclick="myFunction()">click</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var now;
+    var time = new Date().getHours();
+    if (time < 10) {
+        now = "MORNING";
+    } else if (time < 16) {
+        now = "AFTERNOON";
+    } else {
+        now = "Evening";
+    }
+document.getElementById("demo").innerHTML = now;
+}
+</script>
+</body>
+</html>
